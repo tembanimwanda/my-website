@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tembani Mwanda | Web Developer</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <strong>Tembani Mwanda</strong>
+  <div>
+    <a href="#hero">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <span class="theme-toggle">🌓</span>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Web Application Developer</h1>
+      <p>I build functional dashboards and management systems that solve real-world problems.</p>
+      <div class="hero-actions">
+        <a href="#projects"><button class="btn">View Projects</button></a>
+        <a href="#contact"><button class="btn outline">Contact Me</button></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="temzy.jpeg" alt="Tembani Mwanda">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="content">
+    <div></div>
+    <p> 
+
+      I’m a web developer focused on building practical systems such as admin dashboards,
+      management tools, and data-driven interfaces.
+    </p>
+  </div>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid skills">
+    <div class="skill-card">
+      <h4>Frontend</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" data-fill="90%"></div>
+      </div>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+    <div class="skill-card">
+      <h4>System Logic</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" data-fill="85%"></div>
+      </div>
+      <p>CRUD, State Management, Auth Flow</p>
+    </div>
+    <div class="skill-card">
+      <h4>Tools</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" data-fill="80%"></div>
+      </div>
+      <p>Git, VS Code, Figma</p>
+    </div>
+  </div>
+</section>
+<!-- EDUCATION / CERTIFICATIONS -->
+<section id="education">
+  <h2>Education & Certifications</h2>
+  <div class="grid education">
+    <!-- Items will be rendered dynamically -->
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="filters">
+    <button class="btn outline" data-filter="all">All</button>
+    <button class="btn outline" data-filter="system">Systems</button>
+  </div>
+  <div class="grid projects" id="projectList"></div>
+</section>
+<!-- HERO DOWNLOAD CV BUTTON -->
+<section id="hero">
+  <div>
+    <h1 id="heroTitle">Web Application Developer</h1>
+    <p>I build functional dashboards and management systems that solve real-world problems.</p>
+    <div class="hero-actions">
+      <a href="#projects"><button class="btn">View Projects</button></a>
+      <a href="#contact"><button class="btn outline">Contact Me</button></a>
+      <a href="resume/Tembani-Mwanda-CV.pdf" download class="btn">Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS SECTION -->
+<section id="stats">
+  <h2>Stats</h2>
+  <div class="grid stats">
+    <div class="stat-card">
+      <h3 id="projectsCount">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat-card">
+      <h3 id="certsCount">0</h3>
+      <p>Certificates Earned</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / ARTICLES -->
+<section id="blog">
+  <h2>Articles & Blog</h2>
+  <div class="grid blog" id="blogList">
+    <!-- JS will inject blog cards here -->
+  </div>
+</section>
+<!-- PROCESS -->
+<section id="process">
+  <h2>How I Work</h2>
+  <div class="steps">
+    <div class="step">Understand the problem</div>
+    <div class="step">Design the system</div>
+    <div class="step">Build & test</div>
+    <div class="step">Improve continuously</div>
+  </div>
+</section>
+ 
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"Tembani built a fantastic dashboard for our team — very efficient and intuitive!"</p>
+      <h4>— John Mbale, Project Manager</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Highly professional developer. Always communicates clearly and delivers on time."</p>
+      <h4>— Jane Simasiku, Client</h4>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button class="btn">Send Message</button>
+    <p id="formMsg"></p>
+  </form>
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <span>© <span id="year"></span> Tembani Mwanda</span>
+    
+    <!-- Quick links -->
+    <div class="footer-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+
+    <!-- Social links -->
+    <div class="footer-social">
+      <a href="https://github.com/" target="_bhttps://tembanimwanda.github.io/event-website/index.htmllank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      <a href="https://wa.me/0776740853" target="_blank">WhatsApp</a>
+      <a href="https://facebook.com/mwanda jeliko temzy" target="_blank">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <h3 id="modalTitle"></h3>
+    <div id="modalDesc"></div>
+    <button class="btn" id="closeModal">Close</button>
+  </div>
+</div>
+
+<script src="js/index.js"></script>
+<button id="backToTop" title="Back to top">↑</button>
+</body>
+</html>
